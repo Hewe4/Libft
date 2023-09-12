@@ -6,11 +6,18 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:06:21 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/12 18:06:22 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/12 18:27:09 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	isprint(int c)
 {
+	int	bl;
 	
+	bl = 0;
+	if (bl >= 32 && bl <= 126)
+	{
+		bl = 1;
+	}
+	return bl;
 }
