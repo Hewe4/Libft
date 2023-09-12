@@ -1,23 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 18:05:58 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/12 18:31:47 by ide-ruit         ###   ########.fr       */
+/*   Created: 2023/09/12 18:45:04 by ide-ruit          #+#    #+#             */
+/*   Updated: 2023/09/12 18:47:53 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+int	ft_strlen(char *str)
 {
-	int bl;
-
-	bl = 0;
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	int	i;
+	int	cont;
+	
+	cont = 0;
+	i = 0;
+	while (str[i] != '\0')
 	{
-		bl = 1;
+		cont++;
+		i++;
 	}
-	return	bl;
+	return cont;
 }

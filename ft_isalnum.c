@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 11:09:34 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/12 11:10:07 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/12 18:31:38 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	isalpha(int c)
 	return	bl;
 }
 
-int	isalnum (int c)
+int	ft_isalnum (int c)
 {
     int bl;
 

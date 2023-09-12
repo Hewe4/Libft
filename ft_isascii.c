@@ -6,11 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:06:26 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/12 18:06:27 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/12 18:31:54 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isascii(int c)
+int	ft_isascii(int c)
 {
 	int	bl;
 
