@@ -1,26 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 18:45:04 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/18 20:13:55 by ide-ruit         ###   ########.fr       */
+/*   Created: 2023/09/18 20:32:58 by ide-ruit          #+#    #+#             */
+/*   Updated: 2023/09/18 20:54:01 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(const char *str)
+int	ft_atoi(const char *nb)
 {
 	int	i;
-	size_t	cont;
-	
-	cont = 0;
+	int	s;
+	int	n;
+
 	i = 0;
-	while (str[i] != '\0')
+	s = 1;
+	n = 0;
+	while (nb[i] == '+' || nb[i] == '-')
 	{
-		cont++;
+		if (nb[i] == '-')
+		{
+			s *= -1;
+		}
 		i++;
 	}
-	return cont;
+	while (nb[i] <= '9' && nb[i] >= '0')
+	{
+		n = (n * 10) + (nb[i] - '0');
+	}
+	return (n * s);
+	
 }
