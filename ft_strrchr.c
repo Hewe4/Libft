@@ -1,23 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 18:06:15 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/18 19:50:04 by ide-ruit         ###   ########.fr       */
+/*   Created: 2023/09/18 15:49:55 by ide-ruit          #+#    #+#             */
+/*   Updated: 2023/09/18 16:44:39 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(const int c)
-{
-	int bl;
 
-	bl = 0;
-	if (c >'0' && c < '9')
+char	*ft_strrchr(const *str, int c)
+{
+	int	i;
+	
+	i = ft_strlen(str);
+	if (c == '\0')
 	{
-		bl = 1;
+		return (*str + i);
 	}
-	return	bl;
+	i--;
+	while (i > 0)
+	{
+		if (*(str + i) == c)
+		{
+			return (*(str + i));
+		}
+		i--;
+	}
+	return (NULL);
+	
 }

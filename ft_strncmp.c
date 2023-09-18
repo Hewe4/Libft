@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 18:06:15 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/18 19:50:04 by ide-ruit         ###   ########.fr       */
+/*   Created: 2023/09/18 14:09:30 by ide-ruit          #+#    #+#             */
+/*   Updated: 2023/09/18 19:51:28 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(const int c)
+int	strncmp(const char *str1,const  char *str2, int n)
 {
-	int bl;
+	int	i;
 
-	bl = 0;
-	if (c >'0' && c < '9')
+	i = 0;
+	while ((str1[i] != '\0' && str2[i] != '\0') && i <= n)
 	{
-		bl = 1;
+		if (str1[i] != str2[i])
+		{
+			return (str1[i] - str2[i]);
+		}
+		i++;
 	}
-	return	bl;
+	return (0);
 }

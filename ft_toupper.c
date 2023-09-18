@@ -6,11 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:30:38 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/12 18:38:23 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/18 19:51:52 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+int	ft_toupper(const int c)
 {
 	int	a;
 	

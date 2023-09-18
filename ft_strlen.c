@@ -6,11 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:45:04 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/12 18:47:53 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/18 19:51:06 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int	i;
 	int	cont;

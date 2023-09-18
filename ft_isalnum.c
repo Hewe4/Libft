@@ -6,35 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 11:09:34 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/12 18:31:38 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/18 19:49:45 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int c)
-{
-	int bl;
-
-	bl = 0;
-	if (c >'0' && c < '9')
-	{
-		bl = 1;
-	}
-	return	bl;
-}
-
-int	isalpha(int c)
-{
-	int bl;
-
-	bl = 0;
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
-		bl = 1;
-	}
-	return	bl;
-}
-
-int	ft_isalnum (int c)
+int	ft_isalnum (const int c)
 {
     int bl;
 

@@ -6,11 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:05:58 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/12 18:31:47 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/18 19:49:52 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+int	ft_isalpha(const int c)
 {
 	int bl;
 
