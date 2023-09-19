@@ -6,9 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 20:32:58 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/18 20:54:01 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/19 17:52:15 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nb)
 {
@@ -30,7 +32,7 @@ int	ft_atoi(const char *nb)
 	while (nb[i] <= '9' && nb[i] >= '0')
 	{
 		n = (n * 10) + (nb[i] - '0');
+		i++;
 	}
 	return (n * s);
-	
 }

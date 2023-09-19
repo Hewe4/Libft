@@ -6,9 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:06:21 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/18 19:50:12 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/19 17:52:49 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(const int c)
 {

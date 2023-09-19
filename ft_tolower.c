@@ -6,9 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:39:18 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/18 19:51:43 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/19 17:53:45 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_tolower(const int c)
 {

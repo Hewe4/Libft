@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 11:09:34 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:52:19 by ide-ruit         ###   ########.fr       */
+/*   Created: 2023/09/19 17:48:48 by ide-ruit          #+#    #+#             */
+/*   Updated: 2023/09/19 17:54:26 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+#define LIBFT_H
 
-int	ft_isalnum (const int c)
-{
-    int bl;
+#include <unistd.h>
+#include <stdlib.h>
 
-    bl = 0;
-    if(isalpha(c) == 1 || isdigit(c) == 1)
-    {
-        bl = 1;
-    }
-    return	bl;
-}
+size_t	ft_strlen(const char *str);
