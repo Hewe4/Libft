@@ -6,9 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:09:30 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/18 19:51:28 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/19 17:53:25 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	strncmp(const char *str1,const  char *str2, int n)
 {

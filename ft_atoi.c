@@ -1,25 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/12 11:09:34 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:52:19 by ide-ruit         ###   ########.fr       */
+/*   Created: 2023/09/18 20:32:58 by ide-ruit          #+#    #+#             */
+/*   Updated: 2023/09/19 17:52:15 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum (const int c)
+int	ft_atoi(const char *nb)
 {
-    int bl;
+	int	i;
+	int	s;
+	int	n;
 
-    bl = 0;
-    if(isalpha(c) == 1 || isdigit(c) == 1)
-    {
-        bl = 1;
-    }
-    return	bl;
+	i = 0;
+	s = 1;
+	n = 0;
+	while (nb[i] == '+' || nb[i] == '-')
+	{
+		if (nb[i] == '-')
+		{
+			s *= -1;
+		}
+		i++;
+	}
+	while (nb[i] <= '9' && nb[i] >= '0')
+	{
+		n = (n * 10) + (nb[i] - '0');
+		i++;
+	}
+	return (n * s);
 }

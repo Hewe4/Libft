@@ -6,9 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:45:04 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/18 20:13:55 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/19 17:53:14 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *str)
 {

@@ -6,10 +6,11 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:56:47 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/18 19:50:25 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/09/19 17:53:01 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 char	*ft_strchr(const char *str, int c)
 {
