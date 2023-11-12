@@ -6,13 +6,13 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:22:10 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/11/07 11:31:56 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/11/12 18:48:01 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*d;
 	unsigned char	*s;

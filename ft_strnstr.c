@@ -6,13 +6,13 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 19:48:54 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 18:34:17 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2023/11/12 18:41:48 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strnstr(const char *str1, const char *str2, size_t len)
+char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 {
 	size_t	i;
 
