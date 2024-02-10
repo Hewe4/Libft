@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:06:21 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:52:49 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 18:29:47 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 int	ft_isprint(const int c)
 {
 	int	bl;
-	
+
 	bl = 0;
 	if (bl >= 32 && bl <= 126)
 	{
 		bl = 1;
 	}
-	return bl;
+	return (bl);
 }
