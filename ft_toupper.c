@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:30:38 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:53:52 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:10:50 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 int	ft_toupper(const int c)
 {
 	int	a;
-	
+
 	a = c;
 	if (c <= 'z' && c >= 'a')
 	{
 		a -= 32;
 	}
-	return a;
+	return (a);
 }

@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:39:18 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:53:45 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:31:35 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ int	ft_tolower(const int c)
 	{
 		a += 32;
 	}
-	return a;
+	return (a);
 }

@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/05 20:41:08 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/11/05 20:50:58 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:17:03 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	int	i;
-	unsigned char *a;
-	unsigned char content;
-	
+	int				i;
+	unsigned char	*a;
+	unsigned char	content;
+
 	a = s;
 	content = (unsigned char) c;
 	i = 0;
@@ -26,5 +26,5 @@ void	*ft_memset(void *s, int c, size_t n)
 		a[i] = c;
 		i++;
 	}
-	return s;
+	return (s);
 }

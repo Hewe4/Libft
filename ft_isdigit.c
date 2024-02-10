@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:06:15 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:52:36 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:09:28 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int	ft_isdigit(const int c)
 {
-	int bl;
+	int	bl;
 
 	bl = 0;
-	if (c >'0' && c < '9')
+	if (c > '0' && c < '9')
 	{
 		bl = 1;
 	}
-	return	bl;
+	return (bl);
 }

@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 12:24:00 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/11/12 18:52:05 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:23:23 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*a;
-	int	i;
+	int				i;
 
 	i = 0;
 	a = s;

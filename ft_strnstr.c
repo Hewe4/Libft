@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 19:48:54 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/11/12 18:41:48 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:51:59 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 	i = ft_strlen(str2);
 	while (*str1 != '\0' && i <= len)
 	{
-		if (*str1 == *str2 && ft_strncmp(str1,str2,i) == 0)
+		if (*str1 == *str2 && ft_strncmp(str1, str2, i) == 0)
 		{
 			return (*str1);
 		}

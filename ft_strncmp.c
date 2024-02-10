@@ -6,13 +6,13 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 14:09:30 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/11/12 18:43:10 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:10:08 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *str1, const  char *str2, size_t n)
+int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	int	i;
 

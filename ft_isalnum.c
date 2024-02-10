@@ -6,20 +6,20 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 11:09:34 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:52:19 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:13:35 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum (const int c)
+int	ft_isalnum(const int c)
 {
-    int bl;
+	int	bl;
 
-    bl = 0;
-    if(isalpha(c) == 1 || isdigit(c) == 1)
-    {
-        bl = 1;
-    }
-    return	bl;
+	bl = 0;
+	if (isalpha(c) == 1 || isdigit(c) == 1)
+	{
+		bl = 1;
+	}
+	return (bl);
 }

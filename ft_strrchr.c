@@ -6,16 +6,16 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:49:55 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:53:33 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/10 19:58:21 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
-	
+
 	i = ft_strlen(str);
 	if (c == '\0')
 	{
@@ -31,5 +31,4 @@ char	*ft_strrchr(const *str, int c)
 		i--;
 	}
 	return (NULL);
-	
 }
