@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:22:10 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/11/12 18:48:01 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/11 02:20:46 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*d;
 	unsigned char	*s;
-	int	i;
+	int				i;
 
 	d = dest;
 	s = src;
-	if(s < d && s + n > d)
+	if (s < d && s + n > d)
 	{
 		i = n - 1;
 		while (i >= 0)
@@ -38,5 +38,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 			i++;
 		}
 	}
-	return d;
+	return (d);
 }

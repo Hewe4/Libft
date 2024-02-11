@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:45:04 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:53:14 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/11 02:18:12 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlen(const char *str)
 {
-	int	i;
+	int		i;
 	size_t	cont;
-	
+
 	cont = 0;
 	i = 0;
 	while (str[i] != '\0')
@@ -24,5 +24,5 @@ size_t	ft_strlen(const char *str)
 		cont++;
 		i++;
 	}
-	return cont;
+	return (cont);
 }

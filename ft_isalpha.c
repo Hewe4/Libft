@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 18:05:58 by ide-ruit          #+#    #+#             */
-/*   Updated: 2023/09/19 17:52:26 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/11 02:22:11 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 int	ft_isalpha(const int c)
 {
-	int bl;
+	int	bl;
 
 	bl = 0;
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 	{
 		bl = 1;
 	}
-	return	bl;
+	return (bl);
 }
