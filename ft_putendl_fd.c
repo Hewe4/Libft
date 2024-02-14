@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 19:51:41 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/14 19:54:07 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/14 20:35:24 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);
-	write(fd, '\n', fd);
+	ft_putchar_fd('\n', fd);
 }

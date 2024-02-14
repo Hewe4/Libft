@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/12 11:09:34 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/10 19:13:35 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/14 20:16:27 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_isalnum(const int c)
 	int	bl;
 
 	bl = 0;
-	if (isalpha(c) == 1 || isdigit(c) == 1)
+	if (ft_isalpha(c) == 1 || ft_isdigit(c) == 1)
 	{
 		bl = 1;
 	}

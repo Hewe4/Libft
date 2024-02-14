@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 16:27:35 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/10 19:21:35 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/14 20:24:21 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,18 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*a;
-	unsigned char	*b;
-	int				i;
-	int				x;
+	const unsigned char	*p1;
+	const unsigned char	*p2;
+	size_t				i;
 
+	p1 = (const unsigned char *)s1;
+	p2 = (const unsigned char *)s2;
 	i = 0;
-	x = 0;
-	a = s1;
-	b = s2;
 	while (i < n)
 	{
-		x = a[i] - b[i];
-		if (x != 0)
-			return (x);
+		if (p1[i] != p2[i])
+			return (p1[i] - p2[i]);
 		i++;
 	}
-	return (x);
+	return (0);
 }

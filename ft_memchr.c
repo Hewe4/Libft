@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 13:00:59 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/10 19:20:06 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/14 20:18:45 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*a;
-	int					i;
+	size_t				i;
 
 	a = s;
 	i = 0;

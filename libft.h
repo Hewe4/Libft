@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 17:48:48 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/14 20:05:59 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/14 20:33:51 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	*ft_memchr(const void*s, int c, size_t n);
 int		ft_memcmp(const void*s1, const void*s2, size_t n);
 void	*ft_memcpy(void*dest, const void*src, size_t n);
 void	*ft_memmove(void*dest, const void*src, size_t n);
-void	ft_memset(void*s, int c, size_t n);
+void	*ft_memset(void*s, int c, size_t n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);

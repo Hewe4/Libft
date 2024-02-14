@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 17:26:15 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/14 18:18:55 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/14 20:36:19 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,9 @@ static size_t	count_words(const char *s, char c);
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
 	size_t	j;
 	char	**cal;
 
-	i = 0;
 	j = 0;
 	if (!s)
 		return (NULL);

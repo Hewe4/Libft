@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/18 15:49:55 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/10 19:58:21 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/14 20:44:17 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,17 @@ char	*ft_strrchr(const char *str, int c)
 	int	i;
 
 	i = ft_strlen(str);
-	if (c == '\0')
+	while (i >= 0)
 	{
-		return (*str + i);
-	}
-	i--;
-	while (i > 0)
-	{
-		if (*(str + i) == c)
+		if (str[i] == (char)c)
 		{
-			return (*(str + i));
+			return ((char *)&str[i]);
 		}
 		i--;
+	}
+	if (c == '\0')
+	{
+		return ((char *)&str[i]);
 	}
 	return (NULL);
 }
