@@ -6,26 +6,32 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 13:25:04 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/14 14:11:01 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/14 20:07:58 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*cal;
 	size_t	i;
-	size_t	j;
 
-	if (!s1 || !set)
-		return (NULL);
 	i = 0;
-	while (s1[i] && ft_strchr(set, s1[i]))
+	if (!s)
+		return (NULL);
+	if (start >= strlen(s))
+		return (strdup(""));
+	if (strlen(s + start) < len)
+		len = strlen(s + start);
+	cal = (char *)malloc((len + 1) * sizeof(char));
+	if (!cal)
+		return (NULL);
+	while (s[start + i] && i < len)
+	{
+		cal[i] = s[start + i];
 		i++;
-	j = ft_strlen(s1);
-	while (j > i && ft_strchr(set, s1[j - 1]))
-		j--;
-	cal = ft_substr(s1, i, j - i);
+	}
+	cal[i] = '\0';
 	return (cal);
 }
