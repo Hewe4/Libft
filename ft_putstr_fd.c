@@ -6,7 +6,7 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 19:43:53 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/14 20:35:50 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/14 21:14:11 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putstr_fd(char *s, int fd)
 	size_t	i;
 
 	i = 0;
-	while (s)
+	while (i < ft_strlen(s))
 	{
 		write(fd, &s[i], 1);
 		i++;

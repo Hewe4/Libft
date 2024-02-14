@@ -6,48 +6,42 @@
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 18:21:40 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/14 19:13:00 by ide-ruit         ###   ########.fr       */
+/*   Updated: 2024/02/15 00:49:57 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	reverse(int n);
-static int	digits(int n);
+static int	count_digits(int n);
+static void	fill_string(char *str, int n, int len, int sign);
+static char	*handle_zero(void);
+static char	*handle_negative(int n, int *sign);
 
 char	*ft_itoa(int n)
 {
-	char	*cal;
-	size_t	l;
-	int		i;
+	char	*str;
+	int		len;
+	int		sign;
 
-	i = 0;
-	l = digits(n);
-	cal = (char *)malloc((l + 1) * sizeof(char));
-	if (!cal)
-		return (NULL);
+	if (n == 0)
+		return (handle_zero());
+	sign = 0;
 	if (n < 0)
-	{
-		cal[i++] = '-';
-		n *= -1;
-	}
-	n = reverse(n);
-	while (n != 0)
-	{
-		cal[i++] = (n % 10) + '0';
-		n /= 10;
-	}
-	cal[i] = '\0';
-	return (cal);
+		return (handle_negative(n, &sign));
+	len = count_digits(n);
+	str = (char *)malloc((len + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	fill_string(str, n, len, sign);
+	return (str);
 }
 
-static int	digits(int n)
+static int	count_digits(int n)
 {
 	int	count;
 
 	count = 0;
-	if (n == 0)
-		return (1);
 	while (n != 0)
 	{
 		n /= 10;
@@ -56,17 +50,34 @@ static int	digits(int n)
 	return (count);
 }
 
-static int	reverse(int n)
+static void	fill_string(char *str, int n, int len, int sign)
 {
-	int	rev_n;
-	int	rem;
+	int	i;
 
-	rev_n = 0;
-	while (n != 0)
+	i = len - 1;
+	while (n > 0)
 	{
-		rem = n % 10;
-		rev_n = rev_n * 10 + rem;
+		str[i--] = '0' + (n % 10);
 		n /= 10;
 	}
-	return (rev_n);
+	if (sign)
+		str[i] = '-';
+}
+
+static char	*handle_zero(void)
+{
+	char	*str;
+
+	str = (char *)malloc(2);
+	if (!str)
+		return (NULL);
+	str[0] = '0';
+	str[1] = '\0';
+	return (str);
+}
+
+static char	*handle_negative(int n, int *sign)
+{
+	*sign = 1;
+	return (ft_itoa(-n));
 }
