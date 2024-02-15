@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/15 16:14:38 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/15 17:27:13 by ide-ruit         ###   ########.fr       */
+/*   Created: 2024/02/15 16:51:53 by ide-ruit          #+#    #+#             */
+/*   Updated: 2024/02/15 17:43:03 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (*lst == NULL)
+	if (lst && f)
 	{
-		new -> next = NULL;
-		*lst = new;
-	}
-	else
-	{
-		new -> next = *lst;
-		*lst = new;
+		while (lst)
+		{
+			f(lst->content);
+			lst = lst->next;
+		}
 	}
 }

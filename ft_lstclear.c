@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ide-ruit <ide-ruit@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/15 16:14:38 by ide-ruit          #+#    #+#             */
-/*   Updated: 2024/02/15 17:27:13 by ide-ruit         ###   ########.fr       */
+/*   Created: 2024/02/15 16:47:55 by ide-ruit          #+#    #+#             */
+/*   Updated: 2024/02/15 17:36:31 by ide-ruit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if (*lst == NULL)
+	t_list	*aux;
+
+	if (lst && del)
 	{
-		new -> next = NULL;
-		*lst = new;
-	}
-	else
-	{
-		new -> next = *lst;
-		*lst = new;
+		while (*lst)
+		{
+			aux = (*lst)-> next;
+			ft_lstdelone(*lst, del);
+			*lst = aux;
+		}
 	}
 }
